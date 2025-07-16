@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles4.css">
+    <title>Ley de Ohm - MiSitio</title>
+</head>
+<body>
+    <div class="network-bg">
+        <div class="network-lines"></div>
+    </div>
+
+    <header>
+        <a href="#" class="logo"><h2Ç
+            >WENA SANGRESITAAAAA</h2Ç></a>
+                          
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">Sobre mí</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Fórmulas <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <div class="dropdown-submenu">
+                            <a href="#" onclick="return false;">Matemáticas <i class="fas fa-caret-right"></i></a>
+                            <div class="dropdown-submenu-content">
+                                <a href="#formulas-algebra">Álgebra</a>
+                                <a href="#formulas-geometria">Geometría</a>
+                                <a href="#formulas-trigonometria">Trigonometría</a>
+                                <a href="#formulas-calculo">Cálculo</a>
+                            </div>
+                        </div>
+                        <div class="dropdown-submenu">
+                            <a href="javascript:void(0)">Física <i class="fas fa-caret-right"></i></a>
+                            <div class="dropdown-submenu-content">
+                                <a href="#formulas-mecanica">Mecánica</a>
+                                <a href="#formulas-termodinamica">Termodinámica</a>
+                                <a href="leyohm.html">Electromagnetismo</a>
+                                <a href="#formulas-cuantica">Física Cuántica</a>
+                            </div>
+                        </div>
+                        <a href="leyohm.html">Ley de Ohm</a>
+                    </div>
+                </li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="ohm-container">
+        <div class="ohm-header">
+            <h1 class="ohm-title">Ley de Ohm</h1>
+            <p class="ohm-subtitle">La relación fundamental entre voltaje, corriente y resistencia en circuitos eléctricos</p>
+        </div>
+
+        <div class="ohm-content">
+            <div class="ohm-card">
+                <h2>¿Qué es la Ley de Ohm?</h2>
+                <p>La Ley de Ohm, formulada por el físico alemán Georg Simon Ohm en 1827, es una de las leyes fundamentales de la electricidad. Establece la relación entre tres magnitudes eléctricas básicas:</p>
+                
+                <ul>
+                    <li><strong>Voltaje (V)</strong>: Diferencia de potencial eléctrico, medido en voltios (V)</li>
+                    <li><strong>Corriente (I)</strong>: Flujo de carga eléctrica, medido en amperios (A)</li>
+                    <li><strong>Resistencia (R)</strong>: Oposición al flujo de corriente, medido en ohmios (Ω)</li>
+                </ul>
+                
+                <p>Esta ley es esencial para el análisis y diseño de circuitos eléctricos y electrónicos, permitiendo calcular cualquiera de estas magnitudes cuando se conocen las otras dos.</p>
+                
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Ohm%27s_Law_with_Voltage_source_TeX.svg/1200px-Ohm%27s_Law_with_Voltage_source_TeX.svg.png" alt="Representación gráfica de la Ley de Ohm" class="ohm-image">
+            </div>
+            
+            <div class="ohm-card">
+                <h2>Fórmulas de la Ley de Ohm</h2>
+                
+                <p>La Ley de Ohm se expresa mediante tres fórmulas equivalentes, dependiendo de qué magnitud queramos calcular:</p>
+                
+                <div class="formula">
+                    <strong>Voltaje:</strong> V = I × R<br>
+                    <span>Donde V es voltaje, I es corriente y R es resistencia</span>
+                </div>
+                
+                <div class="formula">
+                    <strong>Corriente:</strong> I = V / R<br>
+                    <span>Donde I es corriente, V es voltaje y R es resistencia</span>
+                </div>
+                
+                <div class="formula">
+                    <strong>Resistencia:</strong> R = V / I<br>
+                    <span>Donde R es resistencia, V es voltaje y I es corriente</span>
+                </div>
+                
+                <h3>Triángulo de la Ley de Ohm</h3>
+                <p>Una forma fácil de recordar las fórmulas es usando el triángulo de Ohm:</p>
+                <img src="https://www.electronicsandyou.com/wp-content/uploads/2022/04/Ohms-Law-Triangle.jpg" alt="Triángulo de la Ley de Ohm" class="ohm-image" style="max-width: 300px;">
+                
+                <p>Cubre la variable que quieres calcular y las otras dos muestran la relación:</p>
+                <ul>
+                    <li>Cubrir V muestra I × R</li>
+                    <li>Cubrir I muestra V / R</li>
+                    <li>Cubrir R muestra V / I</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="calculator">
+            <h2>Calculadora de la Ley de Ohm</h2>
+            
+            <div class="tabs">
+                <div class="tab active" onclick="changeTab('voltage')">Calcular Voltaje (V)</div>
+                <div class="tab" onclick="changeTab('current')">Calcular Corriente (I)</div>
+                <div class="tab" onclick="changeTab('resistance')">Calcular Resistencia (R)</div>
+            </div>
+            
+            <div id="voltage-tab" class="tab-content active">
+                <div class="input-group">
+                    <label for="current">Corriente (I) en amperios (A):</label>
+                    <input type="number" id="current" step="any" placeholder="Ej: 0.5">
+                </div>
+                <div class="input-group">
+                    <label for="resistance">Resistencia (R) en ohmios (Ω):</label>
+                    <input type="number" id="resistance" step="any" placeholder="Ej: 100">
+                </div>
+                <button class="btn" onclick="calculateVoltage()">Calcular Voltaje</button>
+                <div id="voltage-result" class="result"></div>
+            </div>
+            
+            <div id="current-tab" class="tab-content">
+                <div class="input-group">
+                    <label for="voltage">Voltaje (V) en voltios (V):</label>
+                    <input type="number" id="voltage" step="any" placeholder="Ej: 12">
+                </div>
+                <div class="input-group">
+                    <label for="resistance2">Resistencia (R) en ohmios (Ω):</label>
+                    <input type="number" id="resistance2" step="any" placeholder="Ej: 100">
+                </div>
+                <button class="btn" onclick="calculateCurrent()">Calcular Corriente</button>
+                <div id="current-result" class="result"></div>
+            </div>
+            
+            <div id="resistance-tab" class="tab-content">
+                <div class="input-group">
+                    <label for="voltage2">Voltaje (V) en voltios (V):</label>
+                    <input type="number" id="voltage2" step="any" placeholder="Ej: 12">
+                </div>
+                <div class="input-group">
+                    <label for="current2">Corriente (I) en amperios (A):</label>
+                    <input type="number" id="current2" step="any" placeholder="Ej: 0.5">
+                </div>
+                <button class="btn" onclick="calculateResistance()">Calcular Resistencia</button>
+                <div id="resistance-result" class="result"></div>
+            </div>
+        </div>
+        
+        <div class="ohm-card">
+            <h2>Aplicaciones Prácticas</h2>
+            <p>La Ley de Ohm tiene innumerables aplicaciones en la vida real:</p>
+            
+            <h3>1. Diseño de circuitos electrónicos</h3>
+            <p>Permite calcular los valores adecuados de resistencias para limitar la corriente en componentes como LEDs.</p>
+            
+            <h3>2. Sistemas eléctricos domésticos</h3>
+            <p>Ayuda a determinar el calibre adecuado de cables para evitar sobrecalentamiento.</p>
+            
+            <h3>3. Electrónica de potencia</h3>
+            <p>Esencial para el diseño de fuentes de alimentación y reguladores de voltaje.</p>
+            
+            <h3>4. Seguridad eléctrica</h3>
+            <p>Permite calcular corrientes de falla y dimensionar protecciones adecuadas.</p>
+            
+            <h3>5. Análisis de fallas</h3>
+            <p>Facilita la identificación de problemas en circuitos eléctricos y electrónicos.</p>
+        </div>
+    </main>
+
+    <script>
+        // Funciones para la calculadora
+        function changeTab(tabName) {
+            // Ocultar todos los contenidos de pestañas
+            document.querySelectorAll('.tab-content').forEach(content => {
+                content.classList.remove('active');
+            });
+            
+            // Desactivar todas las pestañas
+            document.querySelectorAll('.tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            
+            // Activar la pestaña seleccionada
+            document.getElementById(tabName + '-tab').classList.add('active');
+            
+            // Activar el botón de la pestaña seleccionada
+            event.currentTarget.classList.add('active');
+        }
+        
+        function calculateVoltage() {
+            const current = parseFloat(document.getElementById('current').value);
+            const resistance = parseFloat(document.getElementById('resistance').value);
+            
+            if (isNaN(current) || isNaN(resistance)) {
+                alert('Por favor ingresa valores válidos');
+                return;
+            }
+            
+            const voltage = current * resistance;
+            const resultElement = document.getElementById('voltage-result');
+            resultElement.innerHTML = `<strong>Resultado:</strong> V = I × R = ${current} A × ${resistance} Ω = <span style="color: var(--primary-color); font-weight: bold;">${voltage.toFixed(2)} V</span>`;
+            resultElement.style.display = 'block';
+        }
+        
+        function calculateCurrent() {
+            const voltage = parseFloat(document.getElementById('voltage').value);
+            const resistance = parseFloat(document.getElementById('resistance2').value);
+            
+            if (isNaN(voltage) || isNaN(resistance) || resistance === 0) {
+                alert('Por favor ingresa valores válidos (R no puede ser 0)');
+                return;
+            }
+            
+            const current = voltage / resistance;
+            const resultElement = document.getElementById('current-result');
+            resultElement.innerHTML = `<strong>Resultado:</strong> I = V / R = ${voltage} V / ${resistance} Ω = <span style="color: var(--primary-color); font-weight: bold;">${current.toFixed(4)} A</span> (${(current * 1000).toFixed(2)} mA)`;
+            resultElement.style.display = 'block';
+        }
+        
+        function calculateResistance() {
+            const voltage = parseFloat(document.getElementById('voltage2').value);
+            const current = parseFloat(document.getElementById('current2').value);
+            
+            if (isNaN(voltage) || isNaN(current) || current === 0) {
+                alert('Por favor ingresa valores válidos (I no puede ser 0)');
+                return;
+            }
+            
+            const resistance = voltage / current;
+            const resultElement = document.getElementById('resistance-result');
+            resultElement.innerHTML = `<strong>Resultado:</strong> R = V / I = ${voltage} V / ${current} A = <span style="color: var(--primary-color); font-weight: bold;">${resistance.toFixed(2)} Ω</span>`;
+            resultElement.style.display = 'block';
+        }
+        
+        // Efecto hover para las tarjetas
+        document.querySelectorAll('.ohm-card').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'translateY(-5px)';
+                card.style.boxShadow = '0 10px 25px rgba(0, 255, 255, 0.3)';
+            });
+            
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'translateY(0)';
+                card.style.boxShadow = '0 0 20px rgba(0, 255, 255, 0.1)';
+            });
+        });
+        
+        // Cerrar menús desplegables al hacer clic fuera de ellos
+        document.addEventListener('click', function(event) {
+            if (!event.target.matches('.dropbtn') && !event.target.matches('.dropdown-submenu a')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.style.display === 'block') {
+                        openDropdown.style.display = 'none';
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

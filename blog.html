@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles3.css">
+    <title>MiSitio - Blog</title>
+</head>
+<body>
+    <div class="network-bg">
+        <div class="network-lines"></div>
+    </div>
+
+    <header>
+        <a href="#" class="logo"><h2Ç
+            >WENA SANGRESITAAAAA</h2Ç></a>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">Sobre mí</a></li>
+                <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Fórmulas <i class="fas fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <div class="dropdown-submenu">
+                        <a href="#" onclick="return false;">Matemáticas <i class="fas fa-caret-right"></i></a>
+                        <div class="dropdown-submenu-content">
+                            <a href="#formulas-algebra">Álgebra</a>
+                            <a href="#formulas-geometria">Geometría</a>
+                            <a href="#formulas-trigonometria">Trigonometría</a>
+                            <a href="#formulas-calculo">Cálculo</a>
+                        </div>
+                    </div>
+                    <div class="dropdown-submenu">
+                        <a href="javascript:void(0)">Física <i class="fas fa-caret-right"></i></a>
+                        <div class="dropdown-submenu-content">
+                            <a href="#formulas-mecanica">Mecánica</a>
+                            <a href="#formulas-termodinamica">Termodinámica</a>
+                            <a href="#formulas-electromagnetismo">Electromagnetismo</a>
+                            <a href="#formulas-cuantica">Física Cuántica</a>
+                        </div>
+                    </div>
+                    <a href="leyohm.html">Ley de ohm</a>
+                </div>
+            </li>
+                
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-container">
+        <div class="blog-header">
+            <h1 class="blog-title">Blog</h1>
+            <p class="blog-subtitle">Experiencias, aprendizajes y reflexiones sobre tecnología, diseño y desarrollo personal</p>
+        </div>
+
+        <div class="search-container">
+            <input type="text" class="search-input" placeholder="Buscar artículos..." id="searchInput">
+        </div>
+
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="all">Todos</button>
+            <button class="filter-btn" data-filter="tecnologia">Tecnología</button>
+            <button class="filter-btn" data-filter="experiencias">Experiencias</button>
+            <button class="filter-btn" data-filter="tutoriales">Tutoriales</button>
+            <button class="filter-btn" data-filter="reflexiones">Reflexiones</button>
+        </div>
+
+        <div class="blog-grid" id="blogGrid">
+            <!-- Featured Article -->
+            <article class="blog-card featured-article" data-category="experiencias">
+                <div class="featured-content">
+                    <span class="featured-badge">Destacado</span>
+                    <h2 class="featured-title">Mi Transición al Desarrollo Web Full Stack</h2>
+                    <p class="featured-excerpt">
+                        Un viaje personal de autodescubrimiento en el mundo del desarrollo web. Desde mis primeros pasos con HTML hasta construir aplicaciones completas con React y Node.js.
+                    </p>
+                    <div class="blog-tags">
+                        <span class="blog-tag">JavaScript</span>
+                        <span class="blog-tag">React</span>
+                        <span class="blog-tag">Carrera</span>
+                    </div>
+                    <a href="#" class="read-more">Leer más →</a>
+                </div>
+                <img src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?w=600&h=400&fit=crop" alt="Desarrollo web" class="featured-image">
+            </article>
+
+            <!-- Regular Articles -->
+            <article class="blog-card" data-category="tecnologia">
+                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=200&fit=crop" alt="Coding" class="blog-image">
+                <div class="blog-content">
+                    <div class="blog-meta">
+                        <span class="blog-category">Tecnología</span>
+                        <span class="blog-date">15 Jul 2025</span>
+                    </div>
+                    <h3 class="blog-card-title">10 Mejores Prácticas para CSS Moderno</h3>
+                    <p class="blog-excerpt">
+                        Descubre las técnicas más actuales para escribir CSS limpio, mantenible y eficiente. Desde Grid hasta Custom Properties.
+                    </p>
+                    <div class="blog-tags">
+                        <span class="blog-tag">CSS</span>
+                        <span class="blog-tag">Web Design</span>
+                        <span class="blog-tag">Frontend</span>
+                    </div>
+                    <a href="#" class="read-more">Leer más →</a>
+                </div>
+            </article>
+
+            <article class="blog-card" data-category="tutoriales">
+                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=200&fit=crop" alt="Tutorial" class="blog-image">
+                <div class="blog-content">
+                    <div class="blog-meta">
+                        <span class="blog-category">Tutorial</span>
+                        <span class="blog-date">12 Jul 2025</span>
+                    </div>
+                    <h3 class="blog-card-title">Cómo Crear Animaciones CSS Fluidas</h3>
+                    <p class="blog-excerpt">
+                        Guía paso a paso para crear animaciones CSS que mejoren la experiencia del usuario sin comprometer el rendimiento.
+                    </p>
+                    <div class="blog-tags">
+                        <span class="blog-tag">CSS</span>
+                        <span class="blog-tag">Animaciones</span>
+                        <span class="blog-tag">UX</span>
+                    </div>
+                    <a href="#" class="read-more">Leer más →</a>
+                </div>
+            </article>
+
+            <article class="blog-card" data-category="experiencias">
+                <img src="https://images.unsplash.com/photo-1515378791036-0648a814c963?w=400&h=200&fit=crop" alt="Experiencia" class="blog-image">
+                <div class="blog-content">
+                    <div class="blog-meta">
+                        <span class="blog-category">Experiencia</span>
+                        <span class="blog-date">10 Jul 2025</span>
+                    </div>
+                    <h3 class="blog-card-title">Lecciones Aprendidas en mi Primer Proyecto Freelance</h3>
+                    <p class="blog-excerpt">
+                        Reflexiones sobre los desafíos, errores y aprendizajes de mi primera experiencia como desarrollador freelance.
+                    </p>
+                    <div class="blog-tags">
+                        <span class="blog-tag">Freelance</span>
+                        <span class="blog-tag">Carrera</span>
+                        <span class="blog-tag">Negocios</span>
+                    </div>
+                    <a href="#" class="read-more">Leer más →</a>
+                </div>
+            </article>
+
+            <article class="blog-card" data-category="reflexiones">
+                <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=400&h=200&fit=crop" alt="Reflexión" class="blog-image">
+                <div class="blog-content">
+                    <div class="blog-meta">
+                        <span class="blog-category">Reflexión</span>
+                        <span class="blog-date">8 Jul 2025</span>
+                    </div>
+                    <h3 class="blog-card-title">El Síndrome del Impostor en Tecnología</h3>
+                    <p class="blog-excerpt">
+                        Cómo enfrentar las dudas y la inseguridad en el mundo tecnológico. Estrategias para construir confianza genuina.
+                    </p>
+                    <div class="blog-tags">
+                        <span class="blog-tag">Mindset</span>
+                        <span class="blog-tag">Carrera</span>
+                        <span class="blog-tag">Psicología</span>
+                    </div>
+                    <a href="#" class="read-more">Leer más →</a>
+                </div>
+            </article>
+
+            <article class="blog-card" data-category="tecnologia">
+                <img src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=400&h=200&fit=crop" alt="JavaScript" class="blog-image">
+                <div class="blog-content">
+                    <div class="blog-meta">
+                        <span class="blog-category">Tecnología</span>
+                        <span class="blog-date">5 Jul 2025</span>
+                    </div>
+                    <h3 class="blog-card-title">JavaScript ES2024: Nuevas Características</h3>
+                    <p class="blog-excerpt">
+                        Explora las últimas características de JavaScript que están cambiando la forma en que escribimos código moderno.
+                    </p>
+                    <div class="blog-tags">
+                        <span class="blog-tag">JavaScript</span>
+                        <span class="blog-tag">ES2024</span>
+                        <span class="blog-tag">Programación</span>
+                    </div>
+                    <a href="#" class="read-more">Leer más →</a>
+                </div>
+            </article>
+
+            <article class="blog-card" data-category="tutoriales">
+                <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=400&h=200&fit=crop" alt="Tutorial código" class="blog-image">
+                <div class="blog-content">
+                    <div class="blog-meta">
+                        <span class="blog-category">Tutorial</span>
+                        <span class="blog-date">3 Jul 2025</span>
+                    </div>
+                    <h3 class="blog-card-title">Configuración Perfecta de VS Code para Desarrolladores</h3>
+                    <p class="blog-excerpt">
+                        Una guía completa para optimizar tu entorno de desarrollo con las mejores extensiones y configuraciones.
+                    </p>
+                    <div class="blog-tags">
+                        <span class="blog-tag">VSCode</span>
+                        <span class="blog-tag">Productividad</span>
+                        <span class="blog-tag">Herramientas</span>
+                    </div>
+                    <a href="#" class="read-more">Leer más →</a>
+                </div>
+            </article>
+        </div>
+
+        <div class="loading-spinner" id="loadingSpinner"></div>
+
+        <div class="load-more-container">
+            <button class="load-more-btn" id="loadMoreBtn">Cargar más artículos</button>
+        </div>
+    </main>
+
+    <script>
+        // Filter functionality
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const blogCards = document.querySelectorAll('.blog-card');
+        const searchInput = document.getElementById('searchInput');
+        const loadMoreBtn = document.getElementById('loadMoreBtn');
+        const loadingSpinner = document.getElementById('loadingSpinner');
+
+        // Filter by category
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                // Add active class to clicked button
+                button.classList.add('active');
+
+                const filter = button.getAttribute('data-filter');
+                
+                blogCards.forEach(card => {
+                    const category = card.getAttribute('data-category');
+                    if (filter === 'all' || category === filter) {
+                        card.style.display = 'block';
+                        card.style.animation = 'fadeIn 0.5s ease-in-out';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Search functionality
+        searchInput.addEventListener('input', (e) => {
+            const searchTerm = e.target.value.toLowerCase();
+            
+            blogCards.forEach(card => {
+                const title = card.querySelector('.blog-card-title, .featured-title').textContent.toLowerCase();
+                const excerpt = card.querySelector('.blog-excerpt, .featured-excerpt').textContent.toLowerCase();
+                const tags = Array.from(card.querySelectorAll('.blog-tag')).map(tag => tag.textContent.toLowerCase());
+                
+                const matchesSearch = title.includes(searchTerm) || 
+                                    excerpt.includes(searchTerm) || 
+                                    tags.some(tag => tag.includes(searchTerm));
+                
+                if (matchesSearch) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+
+        // Load more functionality
+        loadMoreBtn.addEventListener('click', () => {
+            loadingSpinner.style.display = 'block';
+            loadMoreBtn.style.display = 'none';
+            
+            // Simulate loading
+            setTimeout(() => {
+                // Here you would normally load more articles from your API
+                loadingSpinner.style.display = 'none';
+                loadMoreBtn.style.display = 'block';
+                
+                // For demo, just show a message
+                const message = document.createElement('div');
+                message.innerHTML = '<p style="text-align: center; color: #00ffff; margin: 20px;">¡Todos los artículos han sido cargados!</p>';
+                document.querySelector('.load-more-container').appendChild(message);
+                loadMoreBtn.style.display = 'none';
+            }, 2000);
+        });
+
+        // Add fade-in animation
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes fadeIn {
+                from { opacity: 0; transform: translateY(20px); }
+                to { opacity: 1; transform: translateY(0); }
+            }
+        `;
+        document.head.appendChild(style);
+
+        // Smooth scroll for read more links
+        document.querySelectorAll('.read-more').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                // Here you would normally navigate to the full article
+                console.log('Navigating to full article...');
+            });
+        });
+
+        // Card hover effects
+        blogCards.forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'translateY(-10px) scale(1.02)';
+            });
+            
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+        
+    </script>
+</body>
+</html>
