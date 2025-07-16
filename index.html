@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resuelva rápidamente cálculos físicos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Fondo interactivo de partículas -->
+    <div id="particles-js"></div>
+
+    <!-- Barra de navegación -->
+    <nav>
+        <h1>WENA SANGRESITAAAAA</h1>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Fórmulas <i class="fas fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <div class="dropdown-submenu">
+                        <a href="#" onclick="return false;">Matemáticas <i class="fas fa-caret-right"></i></a>
+                        <div class="dropdown-submenu-content">
+                            <a href="#formulas-algebra">Álgebra</a>
+                            <a href="#formulas-geometria">Geometría</a>
+                            <a href="#formulas-trigonometria">Trigonometría</a>
+                            <a href="#formulas-calculo">Cálculo</a>
+                        </div>
+                    </div>
+                    <div class="dropdown-submenu">
+                        <a href="javascript:void(0)">Física <i class="fas fa-caret-right"></i></a>
+                        <div class="dropdown-submenu-content">
+                            <a href="#formulas-mecanica">Mecánica</a>
+                            <a href="#formulas-termodinamica">Termodinámica</a>
+                            <a href="#formulas-electromagnetismo">Electromagnetismo</a>
+                            <a href="#formulas-cuantica">Física Cuántica</a>
+                        </div>
+                    </div>
+                    <a href="leyohm.html">Ley de Ohm</a>
+                </div>
+            </li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section - Igual a la imagen -->
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Resuelva rápidamente cálculos físicos</h1>
+            <h2>Simplificando el mundo de la física para todos</h2>
+            <div class="search-container">
+                <input type="text" placeholder="Buscar fórmulas o conceptos...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de categorías -->
+    <div class="categories">
+        <h3>Explora por categorías</h3>
+        <div class="category-grid">
+            <div class="category-card">
+                <i class="fas fa-atom"></i>
+                <h4>Mecánica Clásica</h4>
+                <p>Leyes de Newton, movimiento, fuerzas</p>
+            </div>
+            <div class="category-card">
+                <i class="fas fa-bolt"></i>
+                <h4>Electromagnetismo</h4>
+                <p>Circuitos, campos, leyes de Maxwell</p>
+            </div>
+            <div class="category-card">
+                <i class="fas fa-fire"></i>
+                <h4>Termodinámica</h4>
+                <p>Calor, trabajo, leyes termodinámicas</p>
+            </div>
+            <div class="category-card">
+                <a href="leyohm.html" class="category-link">
+                    <i class="fas fa-square-root-alt"></i>
+                    <h4>Ley de Ohm</h4>
+                    <p>Voltaje, Corriente, Resistencia</p>
+                </a>
+            </div>
+        </div>
+
+    <!-- Sección "Sobre mí" -->
+    <div id="about" class="about">
+        <h3>Sobre mí</h3>
+        <p>
+            Soy [Tu Nombre], estudiante de física y matemáticas con una pasión por explorar 
+            las leyes fundamentales del universo. Me encanta traducir conceptos complejos en 
+            visualizaciones interactivas y artículos accesibles para todos.
+        </p>
+    </div>
+
+    <!-- Sección de proyectos -->
+    <div id="projects" class="projects">
+        <h3>Proyectos Destacados</h3>
+        <div class="project-grid">
+            <div class="project-card">
+                <div class="project-icon">
+                    <i class="fas fa-globe-americas"></i>
+                </div>
+                <h4>Simulador de órbitas planetarias</h4>
+                <p>Una simulación interactiva de las leyes de Kepler usando JavaScript y Three.js.</p>
+                <a href="#" class="project-link">Ver proyecto <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="project-card">
+                <div class="project-icon">
+                    <i class="fas fa-shapes"></i>
+                </div>
+                <h4>Teorema de Pitágoras visual</h4>
+                <p>Demostración animada del teorema con cuadrados y triángulos.</p>
+                <a href="#" class="project-link">Ver proyecto <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="project-card">
+                <div class="project-icon">
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>Blog de relatividad</h4>
+                <p>Artículos explicando la teoría de Einstein con analogías cotidianas.</p>
+                <a href="#" class="project-link">Ver proyecto <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>FísicaSimplificada</h4>
+                <p>Simplificando conceptos físicos para estudiantes y entusiastas.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Enlaces rápidos</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#formulas">Fórmulas</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contacto</h4>
+                <p>email@ejemplo.com</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 FísicaSimplificada. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
