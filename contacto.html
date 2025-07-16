@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles2.css">
+    <title>MiSitio - Contacto</title>
+</head>
+<body>
+    <div class="network-bg">
+        <div class="network-lines"></div>
+    </div>
+
+    <header>
+        <a href="#" class="logo"><h2Ç
+            >WENA SANGRESITAAAAA</h2Ç></a>
+
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">Sobre mí</a></li>
+                <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Fórmulas <i class="fas fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <div class="dropdown-submenu">
+                        <a href="#" onclick="return false;">Matemáticas <i class="fas fa-caret-right"></i></a>
+                        <div class="dropdown-submenu-content">
+                            <a href="#formulas-algebra">Álgebra</a>
+                            <a href="#formulas-geometria">Geometría</a>
+                            <a href="#formulas-trigonometria">Trigonometría</a>
+                            <a href="#formulas-calculo">Cálculo</a>
+                        </div>
+                    </div>
+                    <div class="dropdown-submenu">
+                        <a href="javascript:void(0)">Física <i class="fas fa-caret-right"></i></a>
+                        <div class="dropdown-submenu-content">
+                            <a href="#formulas-mecanica">Mecánica</a>
+                            <a href="#formulas-termodinamica">Termodinámica</a>
+                            <a href="#formulas-electromagnetismo">Electromagnetismo</a>
+                            <a href="#formulas-cuantica">Física Cuántica</a>
+                        </div>
+                    </div>
+                    <a href="leyohm.html">Ley de ohm</a>
+                    
+                </div>
+            </li>
+                
+                <li><a href="../blog.html">Blog</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-container">
+        <div class="contact-container">
+            <h1 class="contact-title">Contacto</h1>
+            
+            <div class="success-message" id="successMessage">
+                ¡Mensaje enviado exitosamente! Te responderé pronto.
+            </div>
+
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="nombre" class="form-label">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" class="form-input" placeholder="Tu nombre completo" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email" class="form-label">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" class="form-input" placeholder="tu@email.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="asunto" class="form-label">Asunto:</label>
+                    <input type="text" id="asunto" name="asunto" class="form-input" placeholder="Motivo de tu mensaje" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje" class="form-label">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" class="form-textarea" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    Enviar Mensaje 🚀
+                </button>
+            </form>
+        </div>
+    </main>
+
+    <script>
+        // Form submission handler
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const form = this;
+            const submitBtn = form.querySelector('.submit-btn');
+            const successMessage = document.getElementById('successMessage');
+            
+            // Add loading state
+            form.classList.add('loading');
+            submitBtn.textContent = 'Enviando...';
+            
+            // Simulate form submission
+            setTimeout(() => {
+                form.classList.remove('loading');
+                submitBtn.textContent = 'Enviar Mensaje 🚀';
+                successMessage.style.display = 'block';
+                form.reset();
+                
+                // Hide success message after 5 seconds
+                setTimeout(() => {
+                    successMessage.style.display = 'none';
+                }, 5000);
+            }, 2000);
+        });
+
+        // Add focus animations
+        const inputs = document.querySelectorAll('.form-input, .form-textarea');
+        inputs.forEach(input => {
+            input.addEventListener('focus', function() {
+                this.parentElement.style.transform = 'scale(1.02)';
+            });
+            
+            input.addEventListener('blur', function() {
+                this.parentElement.style.transform = 'scale(1)';
+            });
+        });
+        
+    </script>
+</body>
+</html>
